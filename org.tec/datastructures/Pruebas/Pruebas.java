@@ -146,7 +146,10 @@ public class Pruebas {
         lqs.add(6);
         lqs.add(1);
         lqs.add(2);
+        lqs.print();
         QuickSort qs = new QuickSort();
+        qs.sort(lqs, "up");
+        lqs.print();
 
     }
 

@@ -13,7 +13,7 @@ public class QuickSort
         }
     }
 
-    public static void sort(ListaSimple<?> lista)
+    public static void sort(ListaSimple<?> lista, String up)
     {
         sortAuxiliar(lista, "up");
     }
