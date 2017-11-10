@@ -7,6 +7,7 @@ import datastructures.Busqueda.BinarySearch;
 import datastructures.DatosLineales.Cola;
 import datastructures.DatosLineales.ListaSimple;
 import datastructures.DatosLineales.Pila;
+import datastructures.Ordenamiento.BubbleSort;
 import datastructures.Ordenamiento.QuickSort;
 
 /**
@@ -151,6 +152,22 @@ public class Pruebas {
         qs.sort(lqs, "up");
         lqs.print();
 
+        //--------------------------------------------------------------------------------------//
+        System.out.println("\n------------BubbleSort-----------------------------------------------------\n");
+        //--------------------------------------------------------------------------------------//
+
+        ListaSimple lb = new ListaSimple();
+
+        lb.add(5);
+        lb.add(8);
+        lb.add(3);
+
+        lb.print();
+
+        BubbleSort bs = new BubbleSort();
+        bs.sort(lb, "up");
+
+        lb.print();
     }
 
 }

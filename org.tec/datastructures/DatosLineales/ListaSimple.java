@@ -197,6 +197,7 @@ public class ListaSimple<T>
         while (aux.getNext() != null) {
             if (aux.getNext() == null)
             {
+                System.out.print(aux.getData()+",");
                 aux = aux.getNext();
             }
             else

@@ -7,7 +7,7 @@ import datastructures.DatosLineales.NodeLista;
  */
 public class BubbleSort
 {
-    public static void sort(ListaSimple<?> lista)
+    public static void sort(ListaSimple<?> lista, String up)
     {
         SortAuxiliar(lista, "up");
     }

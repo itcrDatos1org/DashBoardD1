@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a900ce8c-2ca3-4d44-a96c-b2e9280d82fc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org.tec/datastructures/Ordenamiento/QuickSort.java" afterPath="$PROJECT_DIR$/org.tec/datastructures/Ordenamiento/QuickSort.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org.tec/datastructures/DatosLineales/ListaSimple.java" afterPath="$PROJECT_DIR$/org.tec/datastructures/DatosLineales/ListaSimple.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org.tec/datastructures/Ordenamiento/BubbleSort.java" afterPath="$PROJECT_DIR$/org.tec/datastructures/Ordenamiento/BubbleSort.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org.tec/datastructures/Pruebas/Pruebas.java" afterPath="$PROJECT_DIR$/org.tec/datastructures/Pruebas/Pruebas.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -27,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ListaSimple.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ListaSimple.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/org.tec/datastructures/DatosLineales/ListaSimple.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1105">
-              <caret line="204" column="9" lean-forward="false" selection-start-line="204" selection-start-column="9" selection-end-line="204" selection-end-column="9" />
+            <state relative-caret-position="189">
+              <caret line="199" column="50" lean-forward="true" selection-start-line="199" selection-start-column="50" selection-end-line="199" selection-end-column="50" />
               <folding>
                 <element signature="method#addP#0;class#ListaSimple#0" expanded="false" />
                 <element signature="method#removeP#0;class#ListaSimple#0" expanded="false" />
@@ -52,7 +52,20 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="476">
               <caret line="46" column="1" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="46" selection-end-column="1" />
-              <folding />
+              <folding>
+                <element signature="e#325#326#0" expanded="false" />
+                <element signature="e#360#361#0" expanded="false" />
+                <element signature="e#399#400#0" expanded="false" />
+                <element signature="e#431#432#0" expanded="false" />
+                <element signature="e#472#473#0" expanded="false" />
+                <element signature="e#504#505#0" expanded="false" />
+                <element signature="e#554#555#0" expanded="false" />
+                <element signature="e#586#587#0" expanded="false" />
+                <element signature="e#627#628#0" expanded="false" />
+                <element signature="e#659#660#0" expanded="false" />
+                <element signature="e#709#710#0" expanded="false" />
+                <element signature="e#741#742#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -126,11 +139,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Pruebas.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Pruebas.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/org.tec/datastructures/Pruebas/Pruebas.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="148" column="20" lean-forward="false" selection-start-line="148" selection-start-column="20" selection-end-line="148" selection-end-column="20" />
+            <state relative-caret-position="325">
+              <caret line="169" column="19" lean-forward="false" selection-start-line="169" selection-start-column="19" selection-end-line="169" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -163,9 +176,9 @@
         <option value="$PROJECT_DIR$/org.tec/datastructures/Busqueda/BinarySearch.java" />
         <option value="$PROJECT_DIR$/org.tec/datastructures/DatosLineales/Cola.java" />
         <option value="$PROJECT_DIR$/org.tec/datastructures/DatosLineales/Pila.java" />
-        <option value="$PROJECT_DIR$/org.tec/datastructures/DatosLineales/ListaSimple.java" />
         <option value="$PROJECT_DIR$/org.tec/datastructures/Ordenamiento/QuickSort.java" />
         <option value="$PROJECT_DIR$/org.tec/datastructures/Pruebas/Pruebas.java" />
+        <option value="$PROJECT_DIR$/org.tec/datastructures/DatosLineales/ListaSimple.java" />
       </list>
     </option>
   </component>
@@ -820,12 +833,12 @@
       <workItem from="1510323960539" duration="286000" />
       <workItem from="1510324387008" duration="4898000" />
       <workItem from="1510346433431" duration="7189000" />
-      <workItem from="1510353840047" duration="918000" />
+      <workItem from="1510353840047" duration="1343000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13291000" />
+    <option name="totallyTimeSpent" value="13716000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -917,7 +930,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="46" column="1" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="46" selection-end-column="1" />
-          <folding />
+          <folding>
+            <element signature="e#325#326#0" expanded="false" />
+            <element signature="e#360#361#0" expanded="false" />
+            <element signature="e#399#400#0" expanded="false" />
+            <element signature="e#431#432#0" expanded="false" />
+            <element signature="e#472#473#0" expanded="false" />
+            <element signature="e#504#505#0" expanded="false" />
+            <element signature="e#554#555#0" expanded="false" />
+            <element signature="e#586#587#0" expanded="false" />
+            <element signature="e#627#628#0" expanded="false" />
+            <element signature="e#659#660#0" expanded="false" />
+            <element signature="e#709#710#0" expanded="false" />
+            <element signature="e#741#742#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1103,29 +1129,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/org.tec/datastructures/DatosLineales/ListaSimple.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="204" column="9" lean-forward="false" selection-start-line="204" selection-start-column="9" selection-end-line="204" selection-end-column="9" />
-          <folding>
-            <element signature="method#addP#0;class#ListaSimple#0" expanded="false" />
-            <element signature="method#removeP#0;class#ListaSimple#0" expanded="false" />
-            <element signature="method#deleteP#0;class#ListaSimple#0" expanded="false" />
-            <element signature="method#getT#0;class#ListaSimple#0" expanded="false" />
-            <element signature="method#getNode#0;class#ListaSimple#0" expanded="false" />
-            <element signature="method#clearP#0;class#ListaSimple#0" expanded="false" />
-            <element signature="method#findP#0;class#ListaSimple#0" expanded="false" />
-            <element signature="method#isEmpty#0;class#ListaSimple#0" expanded="false" />
-            <element signature="method#swap#0;class#ListaSimple#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/org.tec/datastructures/DatosLineales/NodeLista.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="46" column="1" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="46" selection-end-column="1" />
-          <folding />
+          <folding>
+            <element signature="e#325#326#0" expanded="false" />
+            <element signature="e#360#361#0" expanded="false" />
+            <element signature="e#399#400#0" expanded="false" />
+            <element signature="e#431#432#0" expanded="false" />
+            <element signature="e#472#473#0" expanded="false" />
+            <element signature="e#504#505#0" expanded="false" />
+            <element signature="e#554#555#0" expanded="false" />
+            <element signature="e#586#587#0" expanded="false" />
+            <element signature="e#627#628#0" expanded="false" />
+            <element signature="e#659#660#0" expanded="false" />
+            <element signature="e#709#710#0" expanded="false" />
+            <element signature="e#741#742#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1188,10 +1209,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/org.tec/datastructures/Pruebas/Pruebas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="148" column="20" lean-forward="false" selection-start-line="148" selection-start-column="20" selection-end-line="148" selection-end-column="20" />
+        <state relative-caret-position="325">
+          <caret line="169" column="19" lean-forward="false" selection-start-line="169" selection-start-column="19" selection-end-line="169" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/org.tec/datastructures/DatosLineales/ListaSimple.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="199" column="50" lean-forward="true" selection-start-line="199" selection-start-column="50" selection-end-line="199" selection-end-column="50" />
+          <folding>
+            <element signature="method#addP#0;class#ListaSimple#0" expanded="false" />
+            <element signature="method#removeP#0;class#ListaSimple#0" expanded="false" />
+            <element signature="method#deleteP#0;class#ListaSimple#0" expanded="false" />
+            <element signature="method#getT#0;class#ListaSimple#0" expanded="false" />
+            <element signature="method#getNode#0;class#ListaSimple#0" expanded="false" />
+            <element signature="method#clearP#0;class#ListaSimple#0" expanded="false" />
+            <element signature="method#findP#0;class#ListaSimple#0" expanded="false" />
+            <element signature="method#isEmpty#0;class#ListaSimple#0" expanded="false" />
+            <element signature="method#swap#0;class#ListaSimple#0" expanded="false" />
           </folding>
         </state>
       </provider>
