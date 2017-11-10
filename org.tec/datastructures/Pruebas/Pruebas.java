@@ -6,6 +6,7 @@ import datastructures.Arboles.SplayTree;
 import datastructures.Busqueda.BinarySearch;
 import datastructures.DatosLineales.Cola;
 import datastructures.DatosLineales.ListaSimple;
+import datastructures.DatosLineales.Pila;
 
 /**
  * Created by 13mariano on 10 nov 2017.
@@ -80,6 +81,9 @@ public class Pruebas {
         BinarySearch.binarySearch(lbn, 9);
 
         System.out.println("\n-------------DATOS LINEALES-------------------------------------------------------\n");
+        //--------------------------------------------------------------------------------------//
+        System.out.println("\n------------Cola-----------------------------------------------------\n");
+        //--------------------------------------------------------------------------------------//
 
         Cola cola = new Cola();
         cola.Enqueve(1);
@@ -97,6 +101,31 @@ public class Pruebas {
 
         cola.print();
         System.out.println();
+
+        //--------------------------------------------------------------------------------------//
+        System.out.println("\n------------Pila-----------------------------------------------------\n");
+        //--------------------------------------------------------------------------------------//
+        Pila pila = new Pila();
+
+        pila.Push(1);
+        pila.Push(2);
+        pila.Push(3);
+        pila.Push(4);
+        pila.Push(5);
+        pila.Push(6);
+
+
+        pila.print();
+        System.out.println();
+
+        pila.Pop();
+
+        pila.Peek();
+
+        pila.print();
+        System.out.println();
+
+
 
     }
 
