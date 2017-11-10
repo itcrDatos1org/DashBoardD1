@@ -1,9 +1,7 @@
 package datastructures.Ordenamiento;
 
 import datastructures.DatosLineales.ListaSimple;
-/**
- * Created by HP Probook 6475b on 10/11/2017.
- */
+
 public class QuickSort
 {
     public static void sort(ListaSimple<?> lista, boolean descendant)

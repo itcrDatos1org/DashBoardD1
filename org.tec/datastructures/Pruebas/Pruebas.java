@@ -7,6 +7,7 @@ import datastructures.Busqueda.BinarySearch;
 import datastructures.DatosLineales.Cola;
 import datastructures.DatosLineales.ListaSimple;
 import datastructures.DatosLineales.Pila;
+import datastructures.Ordenamiento.QuickSort;
 
 /**
  * Created by 13mariano on 10 nov 2017.
@@ -130,6 +131,22 @@ public class Pruebas {
         //--------------------------------------------------------------------------------------//
 
         lbn.print();
+        System.out.println("\n------------ORDENAMIENTO------------------------------------------------------\n");
+        //--------------------------------------------------------------------------------------//
+        System.out.println("\n------------QuickSort-----------------------------------------------------\n");
+        //--------------------------------------------------------------------------------------//
+
+        ListaSimple lqs = new ListaSimple();
+
+        lqs.add(3);
+        lqs.add(4);
+        lqs.add(7);
+        lqs.add(8);
+        lqs.add(5);
+        lqs.add(6);
+        lqs.add(1);
+        lqs.add(2);
+        QuickSort qs = new QuickSort();
 
     }
 
