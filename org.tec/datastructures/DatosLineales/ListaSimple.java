@@ -14,8 +14,10 @@ public class ListaSimple<T>
         this.capacidad = 0;
     }
 
-    public void add(T data)
-    {
+    public void add(T data){
+        addP(data);
+    }
+    private void addP(T data){
         if (this.capacidad == 0)
         {
             NodeLista<T> aux = new NodeLista(data);
@@ -36,8 +38,10 @@ public class ListaSimple<T>
         }
     }
 
-    public void remove(int posicion)
-    {
+    public void remove(int posicion){
+        removeP(posicion);
+    }
+    private void removeP(int posicion){
         int pos_aux = posicion;
         NodeLista<T> current = this.head;
         if (pos_aux == 0)
@@ -70,8 +74,10 @@ public class ListaSimple<T>
         }
     }
 
-    public void delete(T dato)
-    {
+    public void delete(T dato){
+        deleteP(dato);
+    }
+    private void deleteP(T dato){
         int pos_aux = 0;
         NodeLista<T> current = this.head;
         if (current.getData() == dato)
@@ -97,8 +103,10 @@ public class ListaSimple<T>
         }
     }
 
-    public T get(int i)
-    {
+    public T get(int i){
+        return getT(i);
+    }
+    private T getT(int i){
         NodeLista<T> aux = getHead();
         int x = 0;
         while (x != i)
@@ -141,8 +149,12 @@ public class ListaSimple<T>
         this.head = head;
     }
 
-    public void clear()
-    {
+
+
+    public void clear(){
+        clearP();
+    }
+    private void clearP(){
         this.head = null;
         this.capacidad = 0;
     }
@@ -152,8 +164,10 @@ public class ListaSimple<T>
         return this.capacidad;
     }
 
-    public T find(T dato)
-    {
+    public T find(T dato){
+        return findP(dato);
+    }
+    private T findP (T dato){
         NodeLista<T> aux = this.head;
         while (dato != aux.getData()) {
             aux = aux.getNext();
@@ -169,29 +183,29 @@ public class ListaSimple<T>
         return false;
     }
 
-    public String print()
-    {
-        String fin = "[";
+    public void print(){
+        printP();
+    }
+    private void printP(){
+
         NodeLista<T> aux = this.head;
         if (aux == null)
         {
-            fin = fin + "]";
-            return fin;
+            System.out.println("la lsita se encuentra vacia");
         }
+        System.out.print("[");
         while (aux.getNext() != null) {
             if (aux.getNext() == null)
             {
-                fin = fin + aux.getData().toString();
                 aux = aux.getNext();
             }
             else
             {
-                fin = fin + aux.getData().toString() + ",";
+                System.out.print(aux.getData()+",");
                 aux = aux.getNext();
             }
-        }
-        fin = fin + aux.getData().toString() + "]";
-        return fin;
+        }System.out.println("]");
+
     }
 
     public void swap(int i1, int i2)
