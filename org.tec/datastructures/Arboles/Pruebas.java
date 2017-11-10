@@ -40,18 +40,19 @@ public class Pruebas {
         abb.print();
 
         //--------------------------------------------------------------------------------------//
-        System.out.println("\n------------Arbol B-------------------------------------------------\n");
+        System.out.println("\n------------Arbol Splay-------------------------------------------------\n");
         //--------------------------------------------------------------------------------------//
 
-        BTree bt = new BTree();
+        SplayTree st = new SplayTree();
+        st.insert(00,23);
+        st.insert(01,26);
+        st.insert(02,34);
+        st.insert(03,1);
 
-        bt.insert(0,23);
-        bt.insert(1,23);
-        bt.insert(2,26);
-        bt.insert(3,34);
-        bt.insert(4,1);
-
-        bt.getElement(3);
+        st.getElement(02);
+        
+        st.height();
+        st.print();
 
     }
 
