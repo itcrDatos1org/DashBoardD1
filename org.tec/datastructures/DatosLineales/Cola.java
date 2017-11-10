@@ -11,8 +11,10 @@ public class Cola<T>
         this.capacidad = 0;
     }
 
-    public void Enqueve(T dato)
-    {
+    public void Enqueve (T dato){
+        EnqueveP(dato);
+    }
+    private void EnqueveP(T dato) {
         NodeLista<T> nodo = new NodeLista(dato);
         if (this.capacidad == 0)
         {
@@ -32,13 +34,16 @@ public class Cola<T>
         }
     }
 
-    public T Peek()
-    {
+    public void Peek(){PeekP();}
+    private T PeekP() {
+        System.out.println("Esrte es el primer elemento: "+head.getData());
         return (T)this.head.getData();
     }
 
-    public void Dequeve()
-    {
+    public void  Dequeve(){
+        DequeveP();
+    }
+    private void DequeveP(){
         if (this.capacidad != 0) {
             if (this.capacidad == 1)
             {
@@ -47,6 +52,7 @@ public class Cola<T>
             }
             else
             {
+                System.out.println("se retiro: "+ this.head.getData());
                 this.head = this.head.getNext();
                 this.capacidad -= 1;
             }
@@ -58,28 +64,29 @@ public class Cola<T>
         return this.capacidad;
     }
 
-    public String print()
-    {
-        String fin = "[";
+    public void print(){
+        printP();
+    }
+    private void printP() {
+
         NodeLista<T> aux = this.head;
         if (aux == null)
         {
-            fin = fin + "]";
-            return fin;
+           System.out.println("La cola esta vacia");
         }
+
         while (aux.getNext() != null) {
             if (aux.getNext() == null)
             {
-                fin = fin + aux.getData().toString();
+
                 aux = aux.getNext();
             }
             else
             {
-                fin = fin + aux.getData().toString() + ",";
+                System.out.println("["+aux.getData()+"]");
                 aux = aux.getNext();
             }
         }
-        fin = fin + aux.getData().toString() + "]";
-        return fin;
+
     }
 }

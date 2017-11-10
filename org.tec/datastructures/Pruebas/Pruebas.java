@@ -1,4 +1,11 @@
-package datastructures.Arboles;
+package datastructures.Pruebas;
+
+import datastructures.Arboles.AVLTree;
+import datastructures.Arboles.BinarySearchTree;
+import datastructures.Arboles.SplayTree;
+import datastructures.Busqueda.BinarySearch;
+import datastructures.DatosLineales.Cola;
+import datastructures.DatosLineales.ListaSimple;
 
 /**
  * Created by 13mariano on 10 nov 2017.
@@ -56,8 +63,40 @@ public class Pruebas {
         System.out.print("\n");
 
         System.out.println("\n-------------BUSQUEDAS-------------------------------------------------------\n");
-        //BinarySearchTree
+        BinarySearch bn = new BinarySearch();
 
+        ListaSimple lbn = new ListaSimple();
+        lbn.add(1);
+        lbn.add(2);
+        lbn.add(3);
+        lbn.add(4);
+        lbn.add(5);
+        lbn.add(6);
+        lbn.add(7);
+        lbn.add(8);
+
+
+        BinarySearch.binarySearch(lbn, 4);
+        BinarySearch.binarySearch(lbn, 9);
+
+        System.out.println("\n-------------DATOS LINEALES-------------------------------------------------------\n");
+
+        Cola cola = new Cola();
+        cola.Enqueve(1);
+        cola.Enqueve(2);
+        cola.Enqueve(3);
+        cola.Enqueve(4);
+        cola.Enqueve(5);
+
+        cola.print();
+        System.out.println();
+
+        cola.Dequeve();
+
+        cola.Peek();
+
+        cola.print();
+        System.out.println();
 
     }
 

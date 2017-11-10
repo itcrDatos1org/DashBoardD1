@@ -30,6 +30,7 @@ public class BinarySearch
             } else if (((Comparable)list.get(middle)).compareTo(key) > 0) {
                 maxIndex += middle - 1;
             } else {
+                System.out.println(middle);
                 return middle;
             }
         }
@@ -46,15 +47,18 @@ public class BinarySearch
             } else if (((String)list.get(middle)).compareTo(key) > 0) {
                 maxIndex = middle - 1;
             } else {
+
                 return middle;
             }
         }
+
         return -1;
     }
 
     private static int binarySearchAuxiliarInteger(ListaSimple<Integer> list, int key, int minIndex, int maxIndex)
     {
         if (((Integer)list.get(0)).intValue() == key) {
+
             return 0;
         }
         if (((Integer)list.get(list.size() - 1)).intValue() == key) {
@@ -70,9 +74,11 @@ public class BinarySearch
             } else if (((Integer)list.get(middle)).compareTo(Integer.valueOf(key)) > 0) {
                 maxIndex = middle - 1;
             } else {
+
                 return middle;
             }
         }
+
         return -1;
     }
 }
