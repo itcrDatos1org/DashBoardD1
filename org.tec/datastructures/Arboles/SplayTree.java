@@ -30,6 +30,7 @@ public class SplayTree<Key extends Comparable<Key>, Value>
         this.root = splay(this.root, key);
         int cmp = key.compareTo(this.root.key);
         if (cmp == 0) {
+            System.out.println(this.root.value);
             return (Value)this.root.value;
         }
         return null;

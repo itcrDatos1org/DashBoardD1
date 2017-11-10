@@ -8,8 +8,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
         this.root = null;
     }
 
-    public TreeNode<T> getRoot()
-    {
+    public TreeNode<T> getRoot() {
         System.out.println(root.getData());
         return this.root;
     }
@@ -18,13 +17,12 @@ public class BinarySearchTree<T extends Comparable<T>> {
     {
         return contains(data, this.root);
     }
-
-    private boolean contains(T element, TreeNode<T> node)
-    {
+    private boolean contains(T element, TreeNode<T> node) {
         if (node == null) {
             return false;
         }
         if (node.getData().compareTo(element) == 0) {
+            System.out.println("si contiene a: "+node.getData());
             return true;
         }
         if (node.getData().compareTo(element) > 0) {
@@ -33,6 +31,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
         if (node.getData().compareTo(element) < 0) {
             return contains(element, node.getRight());
         }
+        System.out.println("no contiene a: "+ element);
         return false;
     }
 
@@ -40,9 +39,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
     {
         return getElement(element, this.root);
     }
-
-    private TreeNode<T> getElement(T element, TreeNode<T> node)
-    {
+    private TreeNode<T> getElement(T element, TreeNode<T> node) {
         if (node == null) {
             return null;
         }
@@ -55,8 +52,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
         return getElement(element, node.getLeft());
     }
 
-    public void insert(T data)
-    {
+    public void insert(T data) {
         TreeNode<T> nodeAux = new TreeNode(data);
         if (this.root == null) {
             this.root = nodeAux;
@@ -64,9 +60,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
             this.root = insert(nodeAux, this.root);
         }
     }
-
-    private TreeNode<T> insert(TreeNode<T> NodeAux, TreeNode<T> aux)
-    {
+    private TreeNode<T> insert(TreeNode<T> NodeAux, TreeNode<T> aux) {
         TreeNode<T> nodeAUX = aux;
         if (NodeAux.getData().compareTo(aux.getData()) < 0)
         {
@@ -94,9 +88,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
     {
         this.root = remove(element, this.root);
     }
-
-    private TreeNode<T> remove(T element, TreeNode<T> node)
-    {
+    private TreeNode<T> remove(T element, TreeNode<T> node) {
         if (node == null) {
             return null;
         }
@@ -116,9 +108,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
     {
         print(this.root);
     }
-
-    private void print(TreeNode<T> node)
-    {
+    private void print(TreeNode<T> node) {
         if (node != null)
         {
             print(node.getLeft());

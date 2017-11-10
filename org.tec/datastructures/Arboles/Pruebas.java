@@ -5,6 +5,7 @@ package datastructures.Arboles;
  */
 public class Pruebas {
     public static void main(String [] var){
+        System.out.println("\n-------------ARBOLES-------------------------------------------------------\n");
         System.out.println("\n-------------Avl-------------------------------------------------------\n");
         //Avl Tree
         //--------------------------------------------------------------------------------------//
@@ -36,6 +37,8 @@ public class Pruebas {
         abb.insert(34);
         abb.insert(1);
 
+        abb.contains(26);
+
         abb.getRoot();
         abb.print();
 
@@ -44,15 +47,17 @@ public class Pruebas {
         //--------------------------------------------------------------------------------------//
 
         SplayTree st = new SplayTree();
-        st.insert(00,23);
-        st.insert(01,26);
-        st.insert(02,34);
-        st.insert(03,1);
+        st.insert(0,23);
+        st.insert(1,26);
+        st.insert(2,34);
+        st.insert(3,1);
 
-        st.getElement(02);
-        
-        st.height();
         st.print();
+        System.out.print("\n");
+
+        System.out.println("\n-------------BUSQUEDAS-------------------------------------------------------\n");
+        //BinarySearchTree
+
 
     }
 
